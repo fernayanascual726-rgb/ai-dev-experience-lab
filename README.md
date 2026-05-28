@@ -20,6 +20,21 @@
 | `ai-workflow/` | AI 辅助研发流程与协作工作流 |
 | `experience-summary/` | 开发者体验、效率和协作方面的总结 |
 | `tech-sharing/` | 技术分享、内部交流和材料草稿 |
+| `templates/` | 统一 Markdown 模板 |
+
+## 导航
+
+- [文章索引](INDEX.md)
+- [标签体系](TAGS.md)
+- [GitHub 项目介绍](GITHUB_PROJECT_INTRO.md)
+- [统一 Markdown 模板](templates/README.md)
+
+## 最近更新
+
+| 日期 | 内容 | 说明 |
+| --- | --- | --- |
+| 2026-05-29 | 初始化索引、模板和标签体系 | 增加统一模板、文章目录、项目介绍和标准标签 |
+| 2026-05-28 | 初始化知识库结构 | 创建 AI 场景案例、开发提示词、AI 工作流、体验总结和技术分享目录 |
 
 ## 写作原则
 
