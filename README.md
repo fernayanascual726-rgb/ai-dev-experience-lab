@@ -3,22 +3,93 @@
 Explore how AI improves developer experience, workflow design, and engineering collaboration.
 
 ![License](https://img.shields.io/badge/license-TBD-lightgrey.svg)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
 ![Last Commit](https://img.shields.io/github/last-commit/fernayanascual726-rgb/ai-dev-experience-lab)
-![Markdown](https://img.shields.io/badge/docs-Markdown-lightgrey.svg)
-![AI Workflow](https://img.shields.io/badge/focus-AI%20Workflow-purple.svg)
+![Docs](https://img.shields.io/badge/docs-Markdown-lightgrey.svg)
 
 这是一个面向 **AI Developer Experience（AI 开发者体验）** 的长期知识库，用于沉淀 AI 在研发流程、编码协作、工作流设计和团队实践中的真实经验。
 
 这里关注的不是概念本身，而是 AI 如何进入日常开发：在哪些场景有效，如何设计提示词，怎样嵌入工作流，以及它对开发者效率和协作体验带来的具体变化。
 
-## Core Focus
+## Why This Repository Exists
 
-- **AI Developer Experience**：观察 AI 工具如何影响开发者的理解成本、反馈速度和工作节奏。
-- **AI Workflow Design**：沉淀可执行的 AI 辅助研发流程，而不是停留在工具清单。
-- **Prompt Collaboration**：记录提示词如何承载上下文、约束和协作意图。
-- **AI Coding Practices**：复盘 AI 在代码理解、修改、测试和 Review 中的真实表现。
-- **Developer Productivity**：关注效率提升背后的条件、边界和验证方式。
-- **Human-AI Collaboration**：明确人和 AI 的分工，保留人工判断和工程责任边界。
+AI 工具正在进入日常开发流程，但工具可用不等于体验变好，也不等于团队效率自然提升。
+
+这个仓库用于长期记录 AI 在真实研发场景中的使用方式：它如何帮助开发者理解代码、组织上下文、设计工作流、协作 Review，以及在哪些地方仍然需要人工判断。
+
+重点不是展示工具能力，而是沉淀可复用、可复核、可持续维护的开发者体验实践。
+
+## Current Focus
+
+- **AI Debug Workflow**：整理 AI 辅助排查问题时的上下文准备、假设验证和复盘方式。
+- **Prompt Collaboration**：记录 prompt 如何支持开发者表达意图、约束边界和协作检查点。
+- **AI Coding Experience**：观察 AI 在代码理解、修改、测试和 Review 中带来的体验变化。
+- **Human-in-the-loop Development**：保留开发者判断、验证和责任边界，让 AI 成为协作环节的一部分。
+
+## Philosophy
+
+- AI 不替代开发者思考，尤其不替代工程判断和责任承担。
+- 好的 AI 工作流应该是可观察的：输入、过程、输出和假设都应尽量清楚。
+- AI 输出需要可复核，特别是在代码、测试、Review 和发布相关场景中。
+- 长期价值来自持续沉淀，而不是一次性的生成速度。
+- 人机协作应该降低心智负担，而不是制造新的验证和沟通成本。
+
+## Knowledge Map
+
+### `experience-summary/`
+
+用于记录 AI Developer Experience、效率变化和协作体验方面的阶段性总结。
+
+- [为什么很多开发者用了 AI，却没有真正提升效率？](experience-summary/why-ai-does-not-always-improve-efficiency.md)
+- [总结模板](experience-summary/example-template.md)
+- [内容规范](experience-summary/content-guidelines.md)
+
+### `ai-workflow/`
+
+用于记录 AI 如何嵌入研发流程、团队协作和日常开发节奏。
+
+- [工作流模板](ai-workflow/example-template.md)
+- [内容规范](ai-workflow/content-guidelines.md)
+- [目录说明](ai-workflow/README.md)
+
+### `dev-prompt/`
+
+用于沉淀面向开发任务的 AI 提示词模板、写法和复盘。
+
+- [Prompt 模板](dev-prompt/example-template.md)
+- [内容规范](dev-prompt/content-guidelines.md)
+- [目录说明](dev-prompt/README.md)
+
+### `tech-sharing/`
+
+用于整理 AI 开发者体验相关的技术分享、内部交流材料和演讲草稿。
+
+- [分享模板](tech-sharing/example-template.md)
+- [内容规范](tech-sharing/content-guidelines.md)
+- [目录说明](tech-sharing/README.md)
+
+### `lab/`
+
+用于保存轻量级 AI workflow demo。
+
+- [AI Code Review Demo](lab/ai-code-review-demo.py)
+- [目录说明](lab/README.md)
+
+## Recent Updates
+
+> Run `python3 scripts/update-index.py` after adding Markdown content to refresh this section and `INDEX.md`.
+
+<!-- RECENT_UPDATES_START -->
+
+- 2026-05-29 — [为什么很多开发者用了 AI，却没有真正提升效率？](experience-summary/why-ai-does-not-always-improve-efficiency.md) — Developer Experience / AI Workflow
+
+<!-- RECENT_UPDATES_END -->
+
+## Roadmap
+
+- AI Debug Workflow
+- Prompt Library
+- Human-AI Collaboration Patterns
 
 ## Repository Structure
 
@@ -43,42 +114,6 @@ ai-dev-experience-lab/
 - [GitHub Project Intro](GITHUB_PROJECT_INTRO.md)
 - [Markdown Templates](templates/README.md)
 - [Workflow Demos](lab/README.md)
-
-## Recent Updates
-
-> Run `python3 scripts/update-index.py` after adding Markdown content to refresh this section and `INDEX.md`.
-
-<!-- RECENT_UPDATES_START -->
-
-- 2026-05-29 — [为什么很多开发者用了 AI，却没有真正提升效率？](experience-summary/why-ai-does-not-always-improve-efficiency.md) — Developer Experience / AI Workflow
-
-<!-- RECENT_UPDATES_END -->
-
-## Roadmap
-
-- AI Debug Workflow：整理 AI 辅助排查问题的上下文组织和验证方式。
-- Prompt Library：沉淀适合开发任务的提示词结构和使用边界。
-- AI Collaboration Patterns：记录人机协作、团队协作和责任划分模式。
-- Developer Experience Research：持续复盘 AI 对开发者体验的影响。
-
-## Writing Principles
-
-- 以真实开发场景为起点
-- 优先记录可复用的方法，而不是一次性结论
-- 保留背景、约束和失败经验
-- 避免空泛判断，尽量说明适用条件
-- Markdown 风格保持简洁、清晰、可长期维护
-
-## Suggested Article Shape
-
-每篇内容建议包含：
-
-1. 背景
-2. 问题或目标
-3. 使用方式
-4. 过程记录
-5. 结果与限制
-6. 可复用经验
 
 ## Maintenance
 
