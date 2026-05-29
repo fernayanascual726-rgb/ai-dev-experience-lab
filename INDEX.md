@@ -50,8 +50,8 @@
 ## templates
 
 - [Templates](templates/README.md)
-- [文章标题](templates/article-template.md)
-- [Prompt 模板标题](templates/prompt-template.md)
-- [工作流标题](templates/workflow-template.md)
+- [Article Template](templates/article-template.md)
+- [Prompt Template](templates/prompt-template.md)
+- [Workflow Template](templates/workflow-template.md)
 
 <!-- AUTO_INDEX_END -->

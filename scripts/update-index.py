@@ -49,7 +49,11 @@ def frontmatter(path: Path) -> dict[str, object]:
 def title_for(path: Path) -> str:
     meta = frontmatter(path)
     if isinstance(meta.get("title"), str):
-        return str(meta["title"])
+        title = str(meta["title"])
+        if "{{" not in title:
+            return title
+    if path.name != "README.md" and group_for(path) == "templates":
+        return path.stem.replace("-", " ").title()
     for line in read_lines(path):
         if line.startswith("# "):
             return line[2:].strip()
@@ -60,7 +64,7 @@ def date_for(path: Path) -> str:
     meta = frontmatter(path)
     if isinstance(meta.get("date"), str):
         date = str(meta["date"])
-        return "" if date == "YYYY-MM-DD" else date
+        return "" if date == "YYYY-MM-DD" or "{{" in date else date
     return ""
 
 
