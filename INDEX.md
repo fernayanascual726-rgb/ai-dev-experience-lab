@@ -29,6 +29,7 @@
 - [Experience Summary](experience-summary/README.md)
 - [{{ 文章标题 }}](experience-summary/ai-developer-experience-worldview.md)
 - [内容规范](experience-summary/content-guidelines.md)
+- [上下文正在变成新的技术债](experience-summary/context-is-becoming-the-new-technical-debt.md)
 - [总结标题](experience-summary/example-template.md)
 - [为什么很多开发者用了 AI，却没有真正提升效率？](experience-summary/why-ai-does-not-always-improve-efficiency.md)
 
