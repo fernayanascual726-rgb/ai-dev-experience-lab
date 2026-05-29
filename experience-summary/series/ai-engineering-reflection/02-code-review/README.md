@@ -1,18 +1,20 @@
-# 02 · AI Code Review
+# Series 2 · Code Review
 
-当 AI 输出越来越多，Code Review 正在从代码检查转向风险确认和协作边界管理。
+AI Coding 正在改变 Code Review。
+
+当 AI 越能生成代码，Code Review 就越重要。它不再只是检查 bug、语法和局部实现，而是逐渐承担系统一致性、架构边界和长期维护风险的治理责任。
 
 ## 核心主题
 
-- AI Review Burden
-- Review Cost
-- Hidden Risk
-- Human Validation
-- Engineering Responsibility
+- AI Code Review
+- Review Burden
+- 架构一致性
+- 上下文一致性
+- Human-in-the-loop
 
 ## 文章
 
-- `01-ai-code-review.md`（待补充）
+- [AI Coding 正在让 Code Review 变得越来越重要](article.md)
 
 ## 材料目录
 
