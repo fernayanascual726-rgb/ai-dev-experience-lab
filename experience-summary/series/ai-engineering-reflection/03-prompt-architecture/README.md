@@ -1,18 +1,20 @@
-# 03 · Prompt 架构化
+# Series 3 · Prompt Architecture
 
-当 Prompt 承载越来越多工程约束，它开始接近一种临时架构文档和协作接口。
+Prompt 正在成为 AI Coding 时代的新型工程载体。
+
+它不再只是“给 AI 的一句话”，而是开始承担业务约束、架构约束、编码规范、边界条件和工作流上下文。Prompt 正在演变成一种“临时、实时、可执行”的架构文档。
 
 ## 核心主题
 
 - Prompt as Architecture
-- Context Contract
-- Constraint Design
-- Prompt Maintainability
-- Collaboration Interface
+- 业务约束传递
+- 架构约束描述
+- 工作流上下文
+- Prompt 资产化
 
 ## 文章
 
-- `01-prompt-as-architecture.md`（待补充）
+- [Prompt：当代开发者的临时架构文档](article.md)
 
 ## 材料目录
 
