@@ -1,9 +1,8 @@
-# Series 3 · Prompt Architecture
+# 03 · Prompt 架构化
 
-当 Prompt 承载越来越多工程约束，
-它开始接近一种临时架构文档和协作接口。
+当 Prompt 承载越来越多工程约束，它开始接近一种临时架构文档和协作接口。
 
-## Core Topics
+## 核心主题
 
 - Prompt as Architecture
 - Context Contract
@@ -11,11 +10,11 @@
 - Prompt Maintainability
 - Collaboration Interface
 
-## Articles
+## 文章
 
-- `01-prompt-as-architecture.md`（planned）
+- `01-prompt-as-architecture.md`（待补充）
 
-## Materials
+## 材料目录
 
 - `assets/`：预留图表、截图和发布配图
 - `examples/`：预留代码片段、Prompt 示例和 workflow demo

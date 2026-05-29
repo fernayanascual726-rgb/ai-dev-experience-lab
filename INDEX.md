@@ -26,18 +26,16 @@
 
 ## experience-summary
 
-- [AI Engineering Reflection Series](experience-summary/README.md)
+- [Experience Summary](experience-summary/README.md)
 - [{{ 文章标题 }}](experience-summary/ai-developer-experience-worldview.md)
 - [内容规范](experience-summary/content-guidelines.md)
 - [总结标题](experience-summary/example-template.md)
-- [上下文正在变成新的技术债](experience-summary/series-1-context-debt/01-context-debt.md)
-- [Series 1 · Context Debt](experience-summary/series-1-context-debt/README.md)
-- [AI Code Review](experience-summary/series-2-code-review/01-ai-code-review.md)
-- [Series 2 · Code Review](experience-summary/series-2-code-review/README.md)
-- [Prompt as Architecture](experience-summary/series-3-prompt-architecture/01-prompt-as-architecture.md)
-- [Series 3 · Prompt Architecture](experience-summary/series-3-prompt-architecture/README.md)
-- [AI Workflow State](experience-summary/series-4-workflow-state/01-ai-workflow-state.md)
-- [Series 4 · Workflow State](experience-summary/series-4-workflow-state/README.md)
+- [01 · 上下文债务](experience-summary/series/ai-engineering-reflection/01-context-debt/README.md)
+- [上下文正在变成新的技术债](experience-summary/series/ai-engineering-reflection/01-context-debt/article.md)
+- [02 · AI Code Review](experience-summary/series/ai-engineering-reflection/02-code-review/README.md)
+- [03 · Prompt 架构化](experience-summary/series/ai-engineering-reflection/03-prompt-architecture/README.md)
+- [04 · Workflow 状态管理](experience-summary/series/ai-engineering-reflection/04-workflow-state/README.md)
+- [AI 工程化沉思录](experience-summary/series/ai-engineering-reflection/README.md)
 - [为什么很多开发者用了 AI，却没有真正提升效率？](experience-summary/why-ai-does-not-always-improve-efficiency.md)
 
 ## lab

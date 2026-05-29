@@ -1,9 +1,8 @@
-# Series 2 · Code Review
+# 02 · AI Code Review
 
-当 AI 输出越来越多，
-Code Review 正在从代码检查转向风险确认和协作边界管理。
+当 AI 输出越来越多，Code Review 正在从代码检查转向风险确认和协作边界管理。
 
-## Core Topics
+## 核心主题
 
 - AI Review Burden
 - Review Cost
@@ -11,11 +10,11 @@ Code Review 正在从代码检查转向风险确认和协作边界管理。
 - Human Validation
 - Engineering Responsibility
 
-## Articles
+## 文章
 
-- `01-ai-code-review.md`（planned）
+- `01-ai-code-review.md`（待补充）
 
-## Materials
+## 材料目录
 
 - `assets/`：预留图表、截图和发布配图
 - `examples/`：预留代码片段、Prompt 示例和 workflow demo

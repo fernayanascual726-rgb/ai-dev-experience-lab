@@ -1,9 +1,8 @@
-# Series 1 · Context Debt
+# 01 · 上下文债务
 
-当 AI Coding 进入真实工程环境后，
-Context 正在成为新的复杂度来源。
+当 AI Coding 进入真实工程环境后，Context 正在成为新的复杂度来源。
 
-## Core Topics
+## 核心主题
 
 - Context Pollution
 - Context Drift
@@ -11,11 +10,11 @@ Context 正在成为新的复杂度来源。
 - AI Technical Debt
 - Context Isolation
 
-## Articles
+## 文章
 
-- [01 · Context Debt](01-context-debt.md)
+- [上下文正在变成新的技术债](article.md)
 
-## Materials
+## 材料目录
 
 - `assets/`：预留图表、截图和发布配图
 - `examples/`：预留代码片段、Prompt 示例和 workflow demo
