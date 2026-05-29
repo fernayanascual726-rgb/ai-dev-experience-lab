@@ -34,6 +34,7 @@
 ## lab
 
 - [Lab](lab/README.md)
+- [AI Code Review Workflow](lab/ai-code-review-workflow.md)
 
 ## root
 

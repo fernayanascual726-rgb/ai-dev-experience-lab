@@ -75,6 +75,11 @@ AI 工具正在进入日常开发流程，但工具可用不等于体验变好�
 - [AI Code Review Demo](lab/ai-code-review-demo.py)
 - [目录说明](lab/README.md)
 
+## Workflow Demos
+
+- [AI Code Review Demo](lab/ai-code-review-demo.py)
+- [Workflow Diagram](lab/ai-code-review-workflow.md)
+
 ## Recent Updates
 
 > Run `python3 scripts/update-index.py` after adding Markdown content to refresh this section and `INDEX.md`.

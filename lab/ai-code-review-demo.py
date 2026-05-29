@@ -1,60 +1,112 @@
-"""A lightweight demo for AI Code Review Workflow.
+"""Minimal AI Code Review Workflow demo.
 
-The code intentionally keeps the business logic simple. It can be used as
-sample input when asking an AI assistant to review readability, edge cases,
-and validation boundaries.
+This demo does not call an AI model. Instead, it simulates the shape of an
+AI-assisted code review so the workflow is easy to inspect and run locally.
+
+The focus is Developer Experience:
+- a developer provides code
+- AI suggests review points
+- a human reviewer validates the suggestions
 """
 
-
-def calculate_review_score(changed_files, test_count, has_description):
-    """Calculate a simple review readiness score for a pull request."""
-    score = 0
-
-    # Smaller changes are easier to review and usually carry less coordination cost.
-    if changed_files <= 3:
-        score += 40
-    elif changed_files <= 8:
-        score += 25
-    else:
-        score += 10
-
-    # Tests are not a complete quality signal, but they help reviewers trust changes.
-    if test_count >= 5:
-        score += 35
-    elif test_count > 0:
-        score += 20
-
-    # A clear description helps reviewers understand intent and risk.
-    if has_description:
-        score += 25
-
-    return min(score, 100)
+from dataclasses import dataclass
 
 
-def review_recommendation(score):
-    """Return a human-readable review recommendation."""
-    if score >= 80:
-        return "Ready for review"
-    if score >= 50:
-        return "Needs a focused reviewer check"
-    return "Needs more context before review"
+PROBLEMATIC_CODE = """
+def calc(x,y):
+    r=[]
+    for i in x:
+        try:
+            r.append(i/y)
+        except:
+            pass
+    return r
+""".strip()
 
 
-def main():
-    pull_request = {
-        "changed_files": 5,
-        "test_count": 3,
-        "has_description": True,
-    }
+@dataclass
+class ReviewSuggestion:
+    category: str
+    observation: str
+    developer_check: str
 
-    score = calculate_review_score(
-        pull_request["changed_files"],
-        pull_request["test_count"],
-        pull_request["has_description"],
-    )
 
-    print(f"Review readiness score: {score}")
-    print(f"Recommendation: {review_recommendation(score)}")
+def simulate_ai_review(code: str) -> list[ReviewSuggestion]:
+    """Return simulated AI review suggestions for a small Python snippet."""
+    suggestions: list[ReviewSuggestion] = []
+
+    # Readability: compact formatting makes review harder.
+    if "def calc(x,y):" in code or "r=[]" in code:
+        suggestions.append(
+            ReviewSuggestion(
+                category="Readability",
+                observation="The function is compact but hard to scan. Spacing and clearer structure would make review easier.",
+                developer_check="Confirm whether formatting follows the team's Python style guide.",
+            )
+        )
+
+    # Naming: short names hide intent from future maintainers.
+    if "calc" in code or "r" in code:
+        suggestions.append(
+            ReviewSuggestion(
+                category="Naming",
+                observation="Names such as 'calc', 'x', 'y', and 'r' do not explain the domain intent.",
+                developer_check="Rename variables based on the actual business meaning before merging.",
+            )
+        )
+
+    # Error handling: a bare except can hide production issues.
+    if "except:" in code:
+        suggestions.append(
+            ReviewSuggestion(
+                category="Error Handling",
+                observation="A bare except silently ignores all errors, including unexpected runtime failures.",
+                developer_check="Decide which exception should be handled and whether skipped items should be logged or returned.",
+            )
+        )
+
+    # Optimization: validate inputs before looping when possible.
+    if "/y" in code:
+        suggestions.append(
+            ReviewSuggestion(
+                category="Optimization",
+                observation="The divisor is used repeatedly without validation. A zero value will fail for every item.",
+                developer_check="Validate the divisor once before the loop and define the expected behavior for invalid input.",
+            )
+        )
+
+    return suggestions
+
+
+def print_workflow_header() -> None:
+    """Show the workflow this demo is trying to model."""
+    print("AI Code Review Workflow")
+    print("1. Developer writes code")
+    print("2. AI proposes review suggestions")
+    print("3. Developer validates each suggestion")
+    print("4. Human reviewer decides what should change")
+    print()
+
+
+def print_review(code: str, suggestions: list[ReviewSuggestion]) -> None:
+    """Print code and simulated AI review suggestions."""
+    print("Input code:")
+    print("-" * 40)
+    print(code)
+    print("-" * 40)
+    print()
+
+    print("Simulated AI Review Suggestions:")
+    for index, suggestion in enumerate(suggestions, start=1):
+        print(f"\n{index}. {suggestion.category}")
+        print(f"   Observation: {suggestion.observation}")
+        print(f"   Human check: {suggestion.developer_check}")
+
+
+def main() -> None:
+    print_workflow_header()
+    suggestions = simulate_ai_review(PROBLEMATIC_CODE)
+    print_review(PROBLEMATIC_CODE, suggestions)
 
 
 if __name__ == "__main__":
