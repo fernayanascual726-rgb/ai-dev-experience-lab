@@ -41,7 +41,10 @@ def frontmatter(path: Path) -> dict[str, object]:
             raw = raw.strip().strip('"')
             values = []
             if raw:
-                data[key] = raw
+                if raw.startswith("[") and raw.endswith("]"):
+                    data[key] = [item.strip() for item in raw[1:-1].split(",")]
+                else:
+                    data[key] = raw
                 key = ""
     return data
 
@@ -64,7 +67,9 @@ def date_for(path: Path) -> str:
     meta = frontmatter(path)
     if isinstance(meta.get("date"), str):
         date = str(meta["date"])
-        return "" if date == "YYYY-MM-DD" or "{{" in date else date
+        if date == "YYYY-MM-DD" or ("{{" in date and group_for(path) == "templates"):
+            return ""
+        return date
     return ""
 
 
