@@ -36,7 +36,8 @@
 - [AI Coding 正在让 Code Review 变得越来越重要](experience-summary/series/ai-engineering-reflection/02-code-review/article.md)
 - [Series 3 · Prompt Architecture](experience-summary/series/ai-engineering-reflection/03-prompt-architecture/README.md)
 - [Prompt：当代开发者的临时架构文档](experience-summary/series/ai-engineering-reflection/03-prompt-architecture/article.md)
-- [04 · Workflow 状态管理](experience-summary/series/ai-engineering-reflection/04-workflow-state/README.md)
+- [Series 4 · Workflow State](experience-summary/series/ai-engineering-reflection/04-workflow-state/README.md)
+- [AI Workflow 的核心已经不是生成，而是状态管理](experience-summary/series/ai-engineering-reflection/04-workflow-state/article.md)
 - [AI 工程化沉思录](experience-summary/series/ai-engineering-reflection/README.md)
 - [为什么很多开发者用了 AI，却没有真正提升效率？](experience-summary/why-ai-does-not-always-improve-efficiency.md)
 
