@@ -8,9 +8,33 @@
 
 ## ai-scene-case
 
-- [AI Scene Case](ai-scene-case/README.md)
+- [AI Engineering Patterns & Cases](ai-scene-case/README.md)
+- [Agent README](ai-scene-case/agent-readme/README.md)
+- [Agent README Template](ai-scene-case/agent-readme/agent-readme-template.md)
+- [AGENTS.md Best Practice](ai-scene-case/agent-readme/agents-md-best-practice.md)
+- [CLAUDE.md Best Practice](ai-scene-case/agent-readme/claude-md-best-practice.md)
+- [AI Teammate](ai-scene-case/ai-teammate/README.md)
+- [AI Code Review Case](ai-scene-case/ai-teammate/ai-code-review-case.md)
+- [AI Reviewer Pattern](ai-scene-case/ai-teammate/ai-reviewer-pattern.md)
+- [AI Tester Pattern](ai-scene-case/ai-teammate/ai-tester-pattern.md)
 - [内容规范](ai-scene-case/content-guidelines.md)
+- [Context Debt](ai-scene-case/context-debt/README.md)
+- [Context Cleanup Case](ai-scene-case/context-debt/context-cleanup-case.md)
+- [Context Debt Detection](ai-scene-case/context-debt/context-debt-detection.md)
+- [Context Pruning Pattern](ai-scene-case/context-debt/context-pruning-pattern.md)
 - [案例标题](ai-scene-case/example-template.md)
+- [Memory Engineering](ai-scene-case/memory-engineering/README.md)
+- [Memory Layer Pattern](ai-scene-case/memory-engineering/memory-layer-pattern.md)
+- [Memory Pruning Strategy](ai-scene-case/memory-engineering/memory-pruning-strategy.md)
+- [Project Memory Case](ai-scene-case/memory-engineering/project-memory-case.md)
+- [Multi-Agent](ai-scene-case/multi-agent/README.md)
+- [Coordinator Pattern](ai-scene-case/multi-agent/coordinator-pattern.md)
+- [Multi-Agent Case](ai-scene-case/multi-agent/multi-agent-case.md)
+- [Reviewer Agent Pattern](ai-scene-case/multi-agent/reviewer-agent-pattern.md)
+- [State Management](ai-scene-case/state-management/README.md)
+- [State Management Case](ai-scene-case/state-management/state-management-case.md)
+- [Task State Design](ai-scene-case/state-management/task-state-design.md)
+- [Workflow State Pattern](ai-scene-case/state-management/workflow-state-pattern.md)
 
 ## ai-workflow
 

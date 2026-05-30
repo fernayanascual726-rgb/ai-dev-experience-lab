@@ -1,39 +1,55 @@
-# AI Scene Case
+# AI Engineering Patterns & Cases
 
-本目录用于记录 AI 在具体研发场景中的使用案例。
+本目录用于沉淀 AI 在工程研发场景中的可复用实践。
 
-重点关注真实问题、使用过程、效果边界和可复用经验，而不是单纯展示工具能力。
+它从具体 AI 使用案例库扩展为 AI Engineering Patterns & Cases，重点记录：
 
-## 适合收录的内容
+- 工程模式（Pattern）
+- 实践案例（Case）
+- 最佳实践（Best Practice）
 
-- 使用 AI 辅助需求分析、代码理解、Bug 排查、测试补充等场景
-- AI Coding 在具体工程任务中的落地记录
-- 团队协作中引入 AI 的实际案例
-- 成功、失败或效果有限的实践复盘
+本目录仍然关注真实问题、使用过程、效果边界和可复用经验，不用于存放趋势分析文章、行业观察或观点型长文。
 
-## 推荐写法
+趋势分析内容应放在 `experience-summary/`，例如上下文债务、Memory 竞争、Workflow 状态管理等主题。
 
-每个案例建议说明：
+## Scope
 
-1. 场景背景
-2. 目标或问题
-3. 使用的 AI 工具或方式
-4. 关键提示词或交互过程
-5. 结果
-6. 经验与限制
+适合收录：
 
-## 命名建议
+- Memory Engineering 的工程分层、裁剪和项目记忆实践
+- Agent README / `CLAUDE.md` / `AGENTS.md` 的工程化维护方式
+- Context Debt 的检测、清理和隔离模式
+- AI Workflow 的状态设计、恢复和可观测性实践
+- AI Teammate 在 Review、Testing、协作中的可复用模式
+- Multi-Agent 编排、协调和角色分工模式
 
-文件名建议使用小写英文和连字符：
+不适合收录：
 
-```text
-bug-triage-with-ai.md
-legacy-code-reading.md
-unit-test-generation-case.md
-```
+- 趋势分析文章
+- 公众号风格观点文
+- 模型评测或排行榜
+- 工具推荐清单
+- Prompt 技巧集合
+- 单纯展示 AI 生成能力的内容
 
-## 维护原则
+## Directory Map
 
-- 保留上下文，避免只记录最终结论
-- 说明适用条件，不把单个案例泛化为通用规律
-- 记录 AI 没有帮助或需要人工介入的部分
+- [`memory-engineering/`](memory-engineering/)：Memory 分层、裁剪、项目记忆实践
+- [`agent-readme/`](agent-readme/)：Agent 可读上下文文件与协作规范
+- [`context-debt/`](context-debt/)：上下文债务检测、裁剪和清理案例
+- [`state-management/`](state-management/)：Workflow 状态、任务状态和恢复设计
+- [`ai-teammate/`](ai-teammate/)：AI Reviewer、AI Tester 和团队协作案例
+- [`multi-agent/`](multi-agent/)：多 Agent 协调、评审和编排模式
+
+## Existing Templates
+
+- [`content-guidelines.md`](content-guidelines.md)：内容规范
+- [`example-template.md`](example-template.md)：案例模板
+
+## Writing Principles
+
+- 以工程问题为起点，而不是以工具能力为起点
+- 描述可复用模式，而不是一次性操作经验
+- 明确适用边界、失败模式和权衡
+- 保留人工决策点和系统治理点
+- 优先沉淀长期有效的工程实践
